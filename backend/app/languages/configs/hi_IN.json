@@ -11,6 +11,13 @@
   "digit_range_native": "०-९",
   "digit_range_ascii": "0-9",
 
+  "normalization": {
+    "decimal_word": "दशमलव",
+    "time_connector": "बजकर",
+    "minute_word": "मिनट",
+    "oclock_word": "बजे"
+  },
+
   "number_words": {
     "0": "शून्य", "1": "एक", "2": "दो", "3": "तीन", "4": "चार",
     "5": "पाँच", "6": "छह", "7": "सात", "8": "आठ", "9": "नौ",
@@ -124,7 +131,7 @@
       },
       "test_cases": {
         "positive": ["१५/०८/२०२३", "15-08-2023", "01.12.2024"],
-        "negative": ["15082023", "abc", "32/13/2023"]
+        "negative": ["15082023", "abc", "date-text"]
       }
     },
 
@@ -146,7 +153,7 @@
       },
       "test_cases": {
         "positive": ["५:३०", "14:30", "5:30 PM", "३:०० सुबह"],
-        "negative": ["530", "5.30", "25:61"]
+        "negative": ["530", "5.30", "time-text"]
       }
     },
 

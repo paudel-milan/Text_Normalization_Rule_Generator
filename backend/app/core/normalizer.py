@@ -27,6 +27,12 @@ class Normalizer:
         self.adapter = adapter
         self.rule_gen = RuleGenerator(adapter)
         self.ssml_gen = SsmlGenerator(adapter)
+        # Language-specific normalization words (from config)
+        norm_cfg = adapter.config.get("normalization", {})
+        self._decimal_word = norm_cfg.get("decimal_word", "दशमलव")
+        self._time_connector = norm_cfg.get("time_connector", "बजकर")
+        self._minute_word = norm_cfg.get("minute_word", "मिनट")
+        self._oclock_word = norm_cfg.get("oclock_word", "बजे")
 
     def normalize(self, text: str, category: str) -> dict[str, Any]:
         """
@@ -164,7 +170,7 @@ class Normalizer:
                 decimal_num = int(ascii_decimal)
                 decimal_words = self.adapter.number_to_words(decimal_num)
                 # Get "point" word or use a default
-                result += f" दशमलव {decimal_words}"
+                result += f" {self._decimal_word} {decimal_words}"
             except ValueError:
                 result += f".{decimal_str}"
 
@@ -223,7 +229,7 @@ class Normalizer:
         except ValueError:
             min_word = min_str
 
-        result = f"{hour_word} बजकर {min_word} मिनट" if min_word else f"{hour_word} बजे"
+        result = f"{hour_word} {self._time_connector} {min_word} {self._minute_word}" if min_word else f"{hour_word} {self._oclock_word}"
         if period:
             result += f" {period.strip()}"
         return result
@@ -243,7 +249,7 @@ class Normalizer:
                 parts = ascii_num.split(".")
                 int_word = self.adapter.number_to_words(int(parts[0]))
                 dec_word = self.adapter.number_to_words(int(parts[1]))
-                num_word = f"{int_word} दशमलव {dec_word}"
+                num_word = f"{int_word} {self._decimal_word} {dec_word}"
             else:
                 num_word = self.adapter.number_to_words(int(ascii_num))
         except ValueError:

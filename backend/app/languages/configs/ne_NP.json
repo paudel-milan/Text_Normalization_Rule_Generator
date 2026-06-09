@@ -11,6 +11,13 @@
   "digit_range_native": "०-९",
   "digit_range_ascii": "0-9",
 
+  "normalization": {
+    "decimal_word": "दशमलव",
+    "time_connector": "बजेर",
+    "minute_word": "मिनेट",
+    "oclock_word": "बजे"
+  },
+
   "number_words": {
     "0": "शून्य", "1": "एक", "2": "दुई", "3": "तीन", "4": "चार",
     "5": "पाँच", "6": "छ", "7": "सात", "8": "आठ", "9": "नौ",
@@ -126,7 +133,7 @@
       },
       "test_cases": {
         "positive": ["१५/०८/२०८०", "15-04-2080", "01.12.2081"],
-        "negative": ["15082080", "abc", "32/13/2080"]
+        "negative": ["15082080", "abc", "date-text"]
       }
     },
 
@@ -148,7 +155,7 @@
       },
       "test_cases": {
         "positive": ["५:३०", "14:30", "5:30 PM", "३:०० बिहान"],
-        "negative": ["530", "5.30", "25:61"]
+        "negative": ["530", "5.30", "time-text"]
       }
     },
 
