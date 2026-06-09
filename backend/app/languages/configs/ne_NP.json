@@ -10,6 +10,11 @@
   },
   "digit_range_native": "०-९",
   "digit_range_ascii": "0-9",
+  "decimal_connector": "दशमलव",
+  "time_format": {
+    "with_minutes": "{hour_word} बजेर {min_word} मिनेट",
+    "without_minutes": "{hour_word} बजे"
+  },
 
   "number_words": {
     "0": "शून्य", "1": "एक", "2": "दुई", "3": "तीन", "4": "चार",

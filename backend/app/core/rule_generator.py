@@ -65,7 +65,7 @@ class RuleGenerator:
     def _resolve_value(self, value: str, cat_config: dict) -> str:
         """Resolve a token value that may contain {sub_tokens}."""
         # Find all {sub_token} references
-        sub_tokens = re.findall(r"\{(\w+)\}", value)
+        sub_tokens = re.findall(r"\{([a-zA-Z_]\w*)\}", value)
         resolved = value
         for sub_token in sub_tokens:
             sub_placeholder = "{" + sub_token + "}"
@@ -75,7 +75,7 @@ class RuleGenerator:
 
     def _resolve_remaining(self, pattern: str, cat_config: dict) -> str:
         """Resolve any remaining {placeholder} references in the pattern."""
-        remaining = re.findall(r"\{(\w+)\}", pattern)
+        remaining = re.findall(r"\{([a-zA-Z_]\w*)\}", pattern)
         for token in remaining:
             placeholder = "{" + token + "}"
             resolved = self.adapter.resolve_token(token, cat_config)

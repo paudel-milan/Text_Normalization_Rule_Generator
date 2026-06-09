@@ -1,0 +1,196 @@
+{
+  "locale": "pa_IN",
+  "language": "Punjabi",
+  "script": "Gurmukhi",
+  "native_digits": ["੦", "੧", "੨", "੩", "੪", "੫", "੬", "੭", "੮", "੯"],
+  "ascii_digits": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "digit_map": {
+    "੦": "0", "੧": "1", "੨": "2", "੩": "3", "੪": "4",
+    "੫": "5", "੬": "6", "੭": "7", "੮": "8", "੯": "9"
+  },
+  "digit_range_native": "੦-੯",
+  "digit_range_ascii": "0-9",
+  "decimal_connector": "ਪੁਆਇੰਟ",
+  "time_format": {
+    "with_minutes": "{hour_word} ਵੱਜ ਕੇ {min_word} ਮਿੰਟ",
+    "without_minutes": "{hour_word} ਵਜੇ"
+  },
+
+  "number_words": {
+    "0": "ਸਿਫ਼ਰ", "1": "ਇੱਕ", "2": "ਦੋ", "3": "ਤਿੰਨ", "4": "ਚਾਰ",
+    "5": "ਪੰਜ", "6": "ਛੇ", "7": "ਸੱਤ", "8": "ਅੱਠ", "9": "ਨੌਂ",
+    "10": "ਦੱਸ", "11": "ਗਿਆਰਾਂ", "12": "ਬਾਰਾਂ", "13": "ਤੇਰਾਂ", "14": "ਚੌਦਾਂ",
+    "15": "ਪੰਦਰਾਂ", "16": "ਸੋਲਾਂ", "17": "ਸਤਾਰਾਂ", "18": "ਅਠਾਰਾਂ", "19": "ਉਨੀ",
+    "20": "ਵੀਹ", "21": "ਇੱਕੀ", "22": "ਬਾਈ", "23": "ਤੇਈ", "24": "ਚੌਵੀ",
+    "25": "ਪੱਚੀ", "26": "ਛੱਬੀ", "27": "ਸਤਾਈ", "28": "ਅਠਾਈ", "29": "ਉਨੱਤੀ",
+    "30": "ਤੀਹ", "31": "ਇਕੱਤੀ", "32": "ਬੱਤੀ", "33": "ਤੇਤੀ", "34": "ਚੌਂਤੀ",
+    "35": "ਪੈਂਤੀ", "36": "ਛੱਤੀ", "37": "ਸੈਂਤੀ", "38": "ਅਠੱਤੀ", "39": "ਉਨਤਾਲੀ",
+    "40": "ਚਾਲੀ", "41": "ਇਕਤਾਲੀ", "42": "ਬਿਆਲੀ", "43": "ਤਰਤਾਲੀ", "44": "ਚੁਤਾਲੀ",
+    "45": "ਪੰਤਾਲੀ", "46": "ਛਿਆਲੀ", "47": "ਸਨਤਾਲੀ", "48": "ਅਠਤਾਲੀ", "49": "ਉਨੰਜਾ",
+    "50": "ਪੰਜਾਹ", "51": "ਇਕਵੰਜਾ", "52": "ਬਵੰਜਾ", "53": "ਤਰਵੰਜਾ", "54": "ਚਰਵੰਜਾ",
+    "55": "ਪਚਵੰਜਾ", "56": "ਛਪੰਜਾ", "57": "ਸਤਵੰਜਾ", "58": "ਅਠਵੰਜਾ", "59": "ਉਨਾਹਠ",
+    "60": "ਸੱਠ", "61": "ਇਕਾਹਠ", "62": "ਬਾਹਠ", "63": "ਤਰੇਹਠ", "64": "ਚੌਂਹਠ",
+    "65": "ਪੈਂਹਠ", "66": "ਛਿਆਹਠ", "67": "ਸਤਾਹਠ", "68": "ਅਠਾਹਠ", "69": "ਉਨੱਤਰ",
+    "70": "ਸੱਤਰ", "71": "ਇਕਹੱਤਰ", "72": "ਬਹੱਤਰ", "73": "ਤਹੱਤਰ", "74": "ਚਹੱਤਰ",
+    "75": "ਪਚੱਤਰ", "76": "ਛਿਅੱਤਰ", "77": "ਸਤੱਤਰ", "78": "ਅਠੱਤਰ", "79": "ਉਨਾਸੀ",
+    "80": "ਅੱਸੀ", "81": "ਇਕਿਆਸੀ", "82": "ਬਿਆਸੀ", "83": "ਤਰਾਸੀ", "84": "ਚੁਰਾਸੀ",
+    "85": "ਪਚਾਸੀ", "86": "ਛਿਆਸੀ", "87": "ਸਤਾਸੀ", "88": "ਅਠਾਸੀ", "89": "ਨਵਾਸੀ",
+    "90": "ਨੱਬੇ", "91": "ਇਕਾਨਵੇਂ", "92": "ਬਾਨਵੇਂ", "93": "ਤਰਾਨਵੇਂ", "94": "ਚੁਰਾਨਵੇਂ",
+    "95": "ਪਚਾਨਵੇਂ", "96": "ਛਿਆਨਵੇਂ", "97": "ਸਤਾਨਵੇਂ", "98": "ਅਠਾਨਵੇਂ", "99": "ਨੜਿਨਵੇਂ",
+    "100": "ਸੌ",
+    "1000": "ਹਜ਼ਾਰ",
+    "100000": "ਲੱਖ",
+    "10000000": "ਕਰੋੜ"
+  },
+
+  "categories": {
+    "cardinal": {
+      "description": "Cardinal numbers (e.g., ੫੦੦, 1234)",
+      "pattern_template": "({digits}+)",
+      "tokens": {
+        "digits": "[0-9{native_digit_range}]"
+      },
+      "ssml": {
+        "interpret_as": "cardinal",
+        "template": "<say-as interpret-as=\"cardinal\">{value}</say-as>"
+      },
+      "test_cases": {
+        "positive": ["੫੦੦", "੧੨੩੪", "100", "੦"],
+        "negative": ["abc", "₹੫੦੦", ""]
+      }
+    },
+
+    "ordinal": {
+      "description": "Ordinal numbers (e.g., ੫ਵਾਂ, 3rd)",
+      "suffixes": ["ਵਾਂ", "ਵੀਂ", "ਵੇਂ", "ਰਾ", "ਰੀ", "ਰੇ", "ਥਾ", "ਥੀ", "ਥੇ", "ਲਾ", "ਲੀ", "ਲੇ", "ਸਰਾ", "ਸਰੀ", "ਸਰੇ"],
+      "pattern_template": "({digits}+)\\s*({suffixes})",
+      "tokens": {
+        "digits": "[0-9{native_digit_range}]",
+        "suffixes": "{suffix_alternation}"
+      },
+      "ssml": {
+        "interpret_as": "ordinal",
+        "template": "<say-as interpret-as=\"ordinal\">{value}</say-as>"
+      },
+      "test_cases": {
+        "positive": ["੫ਵਾਂ", "੧ਲਾ", "10ਵੇਂ", "੩ਰਾ"],
+        "negative": ["੫", "ਵਾਂ", "abc"]
+      }
+    },
+
+    "currency": {
+      "description": "Currency amounts (e.g., ₹੫੦੦, Rs 100)",
+      "symbols": ["₹", "Rs", "ਰੁ", "$"],
+      "symbol_names": {
+        "₹": "ਰੁਪਏ",
+        "Rs": "ਰੁਪਏ",
+        "ਰੁ": "ਰੁਪਏ",
+        "$": "ਡਾਲਰ"
+      },
+      "decimal_separator": ".",
+      "pattern_template": "({symbols})\\s*({digits}+)(?:\\.({digits}+))?",
+      "tokens": {
+        "symbols": "(?:{symbol_alternation})",
+        "digits": "[0-9{native_digit_range}]"
+      },
+      "ssml": {
+        "interpret_as": "currency",
+        "attributes": {
+          "currency": "INR"
+        },
+        "template": "<say-as interpret-as=\"currency\">{value}</say-as>"
+      },
+      "normalization": {
+        "format": "{amount_words} {currency_name}"
+      },
+      "test_cases": {
+        "positive": ["₹੫੦੦", "Rs ੧੦੦", "₹ 200.50", "ਰੁ੫੦"],
+        "negative": ["500", "ਰੁਪਏ", "₹"]
+      }
+    },
+
+    "date": {
+      "description": "Date expressions (e.g., ੧੫/੦੮/੨੦੨੩, 15-08-2023)",
+      "separators": ["/", "-", "."],
+      "month_names": [
+        "ਜਨਵਰੀ", "ਫਰਵਰੀ", "ਮਾਰਚ", "ਅਪ੍ਰੈਲ", "ਮਈ", "ਜੂਨ",
+        "ਜੁਲਾਈ", "ਅਗਸਤ", "ਸਤੰਬਰ", "ਅਕਤੂਬਰ", "ਨਵੰਬਰ", "ਦਸੰਬਰ"
+      ],
+      "format_order": "DMY",
+      "pattern_template": "({digits}{1,2}){separator}({digits}{1,2}){separator}({digits}{2,4})",
+      "tokens": {
+        "digits": "[0-9{native_digit_range}]",
+        "separator": "[{separator_chars}]"
+      },
+      "ssml": {
+        "interpret_as": "date",
+        "attributes": {
+          "format": "dmy"
+        },
+        "template": "<say-as interpret-as=\"date\" format=\"dmy\">{value}</say-as>"
+      },
+      "test_cases": {
+        "positive": ["੧੫/੦੮/੨੦੨੩", "15-08-2023", "01.12.2024"],
+        "negative": ["15082023", "abc", "32/13/2023"]
+      }
+    },
+
+    "time": {
+      "description": "Time expressions (e.g., ੫:੩੦, 14:30)",
+      "period_markers": ["AM", "PM", "am", "pm", "ਸਵੇਰੇ", "ਦੁਪਹਿਰ", "ਸ਼ਾਮ", "ਰਾਤ"],
+      "separator": ":",
+      "pattern_template": "({digits}{1,2}):({digits}{2})(?:\\s*({periods}))?",
+      "tokens": {
+        "digits": "[0-9{native_digit_range}]",
+        "periods": "{period_alternation}"
+      },
+      "ssml": {
+        "interpret_as": "time",
+        "attributes": {
+          "format": "hms12"
+        },
+        "template": "<say-as interpret-as=\"time\" format=\"hms12\">{value}</say-as>"
+      },
+      "test_cases": {
+        "positive": ["੫:੩੦", "14:30", "5:30 PM", "੩:੦੦ ਸਵੇਰੇ"],
+        "negative": ["530", "5.30", "25:61"]
+      }
+    },
+
+    "units": {
+      "description": "Measurement units (e.g., ੫ ਕਿਲੋਗ੍ਰਾਮ, 100 km)",
+      "unit_map": {
+        "kg": "ਕਿਲੋਗ੍ਰਾਮ",
+        "g": "ਗ੍ਰਾਮ",
+        "km": "ਕਿਲੋਮੀਟਰ",
+        "m": "ਮੀਟਰ",
+        "cm": "ਸੈਂਟੀਮੀਟਰ",
+        "mm": "ਮਿਲੀਮੀਟਰ",
+        "l": "ਲੀਟਰ",
+        "ml": "ਮਿਲੀਲੀਟਰ",
+        "°C": "ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+        "°F": "ਡਿਗਰੀ ਫਾਰਨਹੀਟ",
+        "ਕਿਲੋਗ੍ਰਾਮ": "ਕਿਲੋਗ੍ਰਾਮ",
+        "ਗ੍ਰਾਮ": "ਗ੍ਰਾਮ",
+        "ਕਿਲੋਮੀਟਰ": "ਕਿਲੋਮੀਟਰ",
+        "ਮੀਟਰ": "ਮੀਟਰ",
+        "ਸੈਂਟੀਮੀਟਰ": "ਸੈਂਟੀਮੀਟਰ",
+        "ਲੀਟਰ": "ਲੀਟਰ",
+        "ਮਿਲੀਲੀਟਰ": "ਮਿਲੀਲੀਟਰ"
+      },
+      "pattern_template": "({digits}+(?:\\.{digits}+)?)\\s*({unit_names})",
+      "tokens": {
+        "digits": "[0-9{native_digit_range}]",
+        "unit_names": "{unit_alternation}"
+      },
+      "ssml": {
+        "interpret_as": "unit",
+        "template": "<say-as interpret-as=\"unit\">{value} {unit_spoken}</say-as>"
+      },
+      "test_cases": {
+        "positive": ["੫ ਕਿਲੋਗ੍ਰਾਮ", "100 km", "੧.੫ ਲੀਟਰ"],
+        "negative": ["ਕਿਲੋਗ੍ਰਾਮ", "100", "km"]
+      }
+    }
+  }
+}

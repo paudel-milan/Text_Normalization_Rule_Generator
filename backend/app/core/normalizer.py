@@ -164,7 +164,8 @@ class Normalizer:
                 decimal_num = int(ascii_decimal)
                 decimal_words = self.adapter.number_to_words(decimal_num)
                 # Get "point" word or use a default
-                result += f" दशमलव {decimal_words}"
+                decimal_connector = self.adapter.config.get("decimal_connector", "दशमलव")
+                result += f" {decimal_connector} {decimal_words}"
             except ValueError:
                 result += f".{decimal_str}"
 
@@ -223,7 +224,15 @@ class Normalizer:
         except ValueError:
             min_word = min_str
 
-        result = f"{hour_word} बजकर {min_word} मिनट" if min_word else f"{hour_word} बजे"
+        time_format = self.adapter.config.get("time_format", {})
+        with_minutes_tmpl = time_format.get("with_minutes", "{hour_word} बजकर {min_word} मिनट")
+        without_minutes_tmpl = time_format.get("without_minutes", "{hour_word} बजे")
+
+        if min_word:
+            result = with_minutes_tmpl.format(hour_word=hour_word, min_word=min_word)
+        else:
+            result = without_minutes_tmpl.format(hour_word=hour_word)
+
         if period:
             result += f" {period.strip()}"
         return result
@@ -243,7 +252,8 @@ class Normalizer:
                 parts = ascii_num.split(".")
                 int_word = self.adapter.number_to_words(int(parts[0]))
                 dec_word = self.adapter.number_to_words(int(parts[1]))
-                num_word = f"{int_word} दशमलव {dec_word}"
+                decimal_connector = self.adapter.config.get("decimal_connector", "दशमलव")
+                num_word = f"{int_word} {decimal_connector} {dec_word}"
             else:
                 num_word = self.adapter.number_to_words(int(ascii_num))
         except ValueError:
