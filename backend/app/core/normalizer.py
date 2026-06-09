@@ -27,6 +27,12 @@ class Normalizer:
         self.adapter = adapter
         self.rule_gen = RuleGenerator(adapter)
         self.ssml_gen = SsmlGenerator(adapter)
+        # Language-specific normalization words (from config)
+        norm_cfg = adapter.config.get("normalization", {})
+        self._decimal_word = norm_cfg.get("decimal_word", "दशमलव")
+        self._time_connector = norm_cfg.get("time_connector", "बजकर")
+        self._minute_word = norm_cfg.get("minute_word", "मिनट")
+        self._oclock_word = norm_cfg.get("oclock_word", "बजे")
 
     def normalize(self, text: str, category: str) -> dict[str, Any]:
         """
